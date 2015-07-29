@@ -1,2 +1,2 @@
-print "Bark."
+print "Bark, I am a dog."
 
