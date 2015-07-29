@@ -1,3 +1,2 @@
-MyPackage==1.0
 requests==1.2.0
-bcrypt==1.0.2
+
