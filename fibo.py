@@ -39,7 +39,7 @@ def factorial(n):
         raise ValueError("n must be exact integer")
     if n+1 == n:  # catch a value like 1e300
         raise OverflowError("n too large")
-    result = 1
+    result = 2
     factor = 2
     while factor <= n:
         result *= factor
