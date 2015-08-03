@@ -7,7 +7,7 @@ def reqtest(a):
     200
     
     """
-    a = raw_input("Enter where you want to go on stackoverflow")
+    a = "questions"
     r = requests.head("http://stackoverflow.com/" + a )
     return(r.status_code)
 
