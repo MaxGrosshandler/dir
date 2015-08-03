@@ -3,7 +3,9 @@ import httplib
 
 def get_status_code(host, path=("/" + a)):
     """
-    print get_status_code("stackoverflow.com", "questions")
+    >>> get_status_code("stackoverflow.com", "questions")
+    200
+    
     """
     conn = httplib.HTTPConnection(host)
     conn.request("HEAD", path)
