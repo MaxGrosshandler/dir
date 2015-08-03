@@ -7,7 +7,7 @@ def reqtest(a):
     200
     
     """
-    a = "questions"
+    a = "nope"
     r = requests.head("http://stackoverflow.com/" + a )
     return(r.status_code)
 
