@@ -3,11 +3,12 @@ import requests
 
 def reqtest(a):
     """
-    >>> reqtest(1)
+    >>> reqtest("questions")
     200
     
     """
-    r = requests.head("http://maxgrosshandler.pythonanywhere.com")
+    a = raw_input("Enter where you want to go on stackoverflow")
+    r = requests.head("http://stackoverflow.com/" + a )
     return(r.status_code)
 
 
