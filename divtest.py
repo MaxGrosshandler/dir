@@ -1,15 +1,14 @@
-import httplib
+import requests
 
 
-def get_status_code(host, path="/"):
+def reqtest(a):
     """
-    >>> get_status_code("stackoverflow.com")
+    >>> reqtest(1)
     200
     
     """
-    conn = httplib.HTTPConnection(host)
-    conn.request("HEAD", path)
-    return conn.getresponse().status
+    r = requests.head("http://maxgrosshandler.pythonanywhere.com")
+    return(r.status_code)
 
 
 if __name__ == "__main__":
