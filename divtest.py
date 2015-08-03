@@ -2,10 +2,10 @@ import requests
 
 def reqtest(a):
     """
-    >>> reqtest("questions")
+    >>> reqtest()
     200
     """
-    r = requests.head("http://stackoverflow.com" + "\"" + a )
+    r = requests.head("http://stackoverflow.com")
     return(r.status_code)
 
     
