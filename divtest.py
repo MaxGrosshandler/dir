@@ -1,11 +1,12 @@
 import requests
 
-
-try:
-    r = requests.head("http://stackoverflow.com")
+def reqtest(a):
+    """
+    >>> reqtest(questions)
+    200
+    """
+    r = requests.head("http://stackoverflow.com" + "\"" + a )
     return(r.status_code)
-except requests.ConnectionError:
-    print("failed to connect")
 
     
 if __name__ == "__main__":
