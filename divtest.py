@@ -2,7 +2,7 @@ import httplib
 
 def httptest(host, path="/"):
     """
-    >>> httptest("stackoverflow.com","/nope")
+    >>> httptest("stackoverflow.com","/questions")
     200
     
     """
