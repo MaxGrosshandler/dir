@@ -2,7 +2,7 @@ import requests
 
 def reqtest(a):
     """
-    >>> reqtest()
+    >>> reqtest(1)
     200
     """
     r = requests.head("http://stackoverflow.com")
