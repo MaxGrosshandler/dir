@@ -1,16 +1,14 @@
-import requests
-#nonsenseagain
+import httplib
 
-def reqtest(a):
+def httptest(host, path="/"):
     """
-    >>> reqtest("questions")
+    >>> httptest("stackoverflow.com","/questions")
     200
     
     """
-    a = "nope"
-    r = requests.head("http://stackoverflow.com/" + a )
-    return(r.status_code)
-
+    conn = httplib.HTTPConnection(host)
+    conn.request("HEAD", path)
+    return conn.getresponse().status
 
 if __name__ == "__main__":
     import doctest
