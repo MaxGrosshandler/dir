@@ -1,7 +1,7 @@
 def divide(a,b):
     """
     >>> divide(4,2)
-    12
+    2
     >>> divide(90,9)
     10
     """
