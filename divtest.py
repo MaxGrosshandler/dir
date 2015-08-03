@@ -1,9 +1,9 @@
 import httplib
 
 
-def get_status_code(host, path=("/" + a)):
+def get_status_code(host, path="/"):
     """
-    >>> get_status_code("stackoverflow.com", "questions")
+    >>> get_status_code("stackoverflow.com")
     200
     
     """
